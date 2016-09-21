@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/message_btn"
+            android:src="@mipmap/icon_exclusive_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_toRightOf="@+id/message_btn"
+            android:layout_marginLeft="2dp"
+            android:textColor="#b406a0"
+            android:id="@+id/tvmsg_01"
+            android:text="店名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="电话"
+            android:textColor="#ae1616"
+            android:layout_below="@+id/tvmsg_01"
+            android:layout_alignLeft="@+id/tvmsg_01"
+            android:id="@+id/tvmsg_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/call_btn"
+            android:layout_toRightOf="@+id/tvmsg_02"
+            android:layout_marginLeft="15dp"
+            android:text="拨号"
+            android:textSize="12dp"
+            android:textColor="#f00"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_toRightOf="@+id/call_btn"
+            android:text="关闭"
+            android:textSize="10dp"
+            android:textColor="#888"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="地址信息"
+        android:id="@+id/tvmsg_03"
+        android:textColor="#00f"
+        android:lines="2"
+        android:layout_width="250dp"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
